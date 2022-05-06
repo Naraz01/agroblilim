@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('component/head.html', {
+        "title": "Научная публикация"
+    })
+<body>
+    @@include('./template/header1.html', {})
+    <main class="scientific">
+        <div class="breadcrumbs-show">
+            <div class="container">
+                @@include('./component/breadcrumbs.html')
+            </div>
+        </div>
+        <div class="container">
+            <div class="scientific-grid mb-48">
+                <div class="scientific-aside">
+                    <div class="scientific-info">
+                        <div class="scientific-info__blog">
+                            <p class="scientific-title">Авторы</p>
+                            <p class="scientific-text__color">Моисеев Йозеф Анатолиевич</p>
+                            <p class="scientific-text">Savannah Nguyen</p>
+                            <p class="scientific-text">Esther Howard</p>
+                        </div>
+                        <div class="scientific-info__blog">
+                            <p class="scientific-title">Наименование работы</p>
+                            <p class="scientific-text">Создания высокопродуктивных пастбищных угодий в условиях
+                                Севера и Запада Казахстана и
+                                их рациональное использования.</p>
+                        </div>
+                        <div class="scientific-info__blog">
+                            <p class="scientific-title">Год</p>
+                            <p class="scientific-text__color">2016</p>
+                        </div>
+                        <div class="scientific-info__blog">
+                            <p class="scientific-title">Организация</p>
+                            <p class="scientific-text__color">Западно-Казахстанский аграрно-технический университет имени Жангир хана</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scientific-content">
+                    <div class="scientific-content__block">
+                        <p class="scientific-title">Кто может внедрить результаты?</p>
+                        <p class="scientific-text">Фермерские хозяйства</p>
+                    </div>
+                    <div class="scientific-content__block">
+                        <p class="scientific-title">Эффект от внедрения</p>
+                        <p class="scientific-text">Предприятия, внедрив технологии, достигнут повышения
+                            продуктивности пастбищ и рационального их
+                            использования.
+                            Применяемые ресурсосберегающие технологии уменьшат
+                            эксплуатационные расходы за счет снижения
+                            потребления ГСМ и снижения транспортных расходов
+                            на единицу продукции.</p>
+                    </div>
+                    <div class="scientific-content__block">
+                        <p class="scientific-title">Затратно ли?</p>
+                        <p class="scientific-text__color">Да</p>
+                        <p class="scientific-text">Предприятия, внедрив технологии, достигнут повышения
+                            продуктивности пастбищ и рационального их
+                            использования.</p>
+                    </div>
+                    <div class="scientific-content__block">
+                        <p class="scientific-title">Расчет окупаемости инвестиции</p>
+                        <p class="scientific-text__color">Нет</p>
+                        <p class="scientific-text">Предприятия, внедрив технологии, достигнут повышения
+                            продуктивности пастбищ и рационального их
+                            использования.
+                        </p>
+                        <div class="scientific-download">
+                            <div class="scientific-download__btn">
+                                Узнать больше
+                                <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_390_2815)">
+                                        <path d="M15.3333 10.6667C15.1565 10.6667 14.987 10.7369 14.8619 10.8619C14.7369 10.9869 14.6667 11.1565 14.6667 11.3333V14C14.6667 14.1768 14.5964 14.3464 14.4714 14.4714C14.3464 14.5964 14.1768 14.6667 14 14.6667H2C1.82319 14.6667 1.65362 14.5964 1.5286 14.4714C1.40357 14.3464 1.33333 14.1768 1.33333 14V11.3333C1.33333 11.1565 1.2631 10.9869 1.13807 10.8619C1.01305 10.7369 0.843478 10.6667 0.666667 10.6667C0.489856 10.6667 0.320286 10.7369 0.195262 10.8619C0.0702379 10.9869 0 11.1565 0 11.3333L0 14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V11.3333C16 11.1565 15.9298 10.9869 15.8047 10.8619C15.6797 10.7369 15.5101 10.6667 15.3333 10.6667Z" fill="white"/>
+                                        <path d="M3.52774 9.02533L6.58508 12.0833C6.96074 12.4571 7.46913 12.667 7.99908 12.667C8.52903 12.667 9.03742 12.4571 9.41308 12.0833L12.4704 9.026C12.5341 8.9645 12.5849 8.89094 12.6198 8.8096C12.6548 8.72827 12.6731 8.64079 12.6739 8.55227C12.6747 8.46375 12.6578 8.37596 12.6243 8.29403C12.5908 8.2121 12.5413 8.13766 12.4787 8.07507C12.4161 8.01247 12.3416 7.96297 12.2597 7.92945C12.1778 7.89593 12.09 7.87906 12.0015 7.87983C11.913 7.8806 11.8255 7.89899 11.7441 7.93393C11.6628 7.96887 11.5892 8.01966 11.5277 8.08333L8.66574 10.944V0.666667C8.66574 0.489856 8.59551 0.320286 8.47048 0.195262C8.34546 0.0702379 8.17589 0 7.99908 0C7.82227 0 7.6527 0.0702379 7.52767 0.195262C7.40265 0.320286 7.33241 0.489856 7.33241 0.666667V10.9447L4.47041 8.08267C4.40891 8.01899 4.33535 7.9682 4.25401 7.93327C4.17268 7.89833 4.0852 7.87994 3.99668 7.87917C3.90816 7.8784 3.82037 7.89526 3.73844 7.92878C3.65651 7.96231 3.58208 8.01181 3.51948 8.0744C3.45689 8.137 3.40738 8.21143 3.37386 8.29336C3.34034 8.37529 3.32347 8.46308 3.32424 8.5516C3.32501 8.64012 3.3434 8.7276 3.37834 8.80894C3.41328 8.89027 3.46407 8.96383 3.52774 9.02533Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_390_2815">
+                                        <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    @@include('./template/footer.html', {})
+</body>
+</html>

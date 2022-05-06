@@ -1,0 +1,22 @@
+.listPublications {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.pubFilter {
+    padding-top: 74px;
+    padding-bottom: 40px;
+    &-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 8px;
+        margin-top: 40px;
+    }
+    &-bottom {
+        display: grid;
+        grid-template-columns: 441px 1fr auto;
+        grid-column-gap: 8px;
+        margin-top: 15px;
+    }
+}

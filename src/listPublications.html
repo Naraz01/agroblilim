@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('component/head.html', {
+        "title": "Список агроконсультантов"
+    })
+<body>
+    @@include('./template/header1.html', {})
+    <main class="list">
+        <div class="breadcrumbs-show">
+            <div class="container">
+                @@include('./component/breadcrumbs.html')
+            </div>
+        </div>
+        
+        <div class="filter-bg">
+            <div class="container">
+                <div class="pubFilter">
+                    <h1 class="filter-title">
+                        Список научных публикаций
+                    </h1>
+                    <div class="pubFilter-top">
+                        <input type="text" class="form-input"/>
+                        <input type="text" class="form-input"/>
+                    </div>
+                    <div class="pubFilter-bottom">
+                        <div>
+                            <select id="normal-select-1" placeholder-text="Директор">
+                                <option value="1" class="select-dropdown__list-item">Директор</option>
+                                <option value="2" class="select-dropdown__list-item">Техник</option>
+                                <option value="3" class="select-dropdown__list-item">Электрик</option>
+                                <option value="4" class="select-dropdown__list-item">Smm</option>
+                                <option value="4" class="select-dropdown__list-item">Smm</option>
+                                <option value="4" class="select-dropdown__list-item">Smm</option>
+                                <option value="4" class="select-dropdown__list-item">Smm</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-input"/>
+                        <div class="search-btn">
+                            <span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <p>
+                                Найти
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="result">
+                <div class="result-left">
+                    Найдено (123)
+                </div>
+                <div class="result-right">
+                    <div class="result-sorting">
+                        <p class="result-text">Сортировка по</p>
+                        <div>
+                            <div class="my-select">
+                                <div class="selectBtn" data-type="firstOption">Дате публикации</div>
+                                <div class="selectDropdown">
+                                    <div class="my-option" data-type="firstOption">Дате публикации 1</div>
+                                    <div class="my-option" data-type="secondOption">Дате публикации 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-panel">
+                        <p></p>
+                        <div class="result-panel__block">
+                            <span class="result-panel__bottom">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.217 8.49613C12.036 8.31513 11.7904 8.21344 11.5344 8.21344C11.2784 8.21344 11.0329 8.31513 10.8518 8.49613L7.67234 11.6746L7.66558 1.62068C7.66558 1.36461 7.56386 1.11903 7.38279 0.93796C7.20172 0.756891 6.95614 0.655167 6.70007 0.655167C6.44399 0.655167 6.19841 0.756891 6.01734 0.93796C5.83627 1.11903 5.73455 1.36461 5.73455 1.62068L5.74131 11.6756L2.56186 8.49613C2.47279 8.40392 2.36625 8.33036 2.24846 8.27976C2.13066 8.22916 2.00396 8.20252 1.87576 8.20141C1.74756 8.20029 1.62042 8.22472 1.50176 8.27327C1.38311 8.32182 1.2753 8.39351 1.18465 8.48416C1.09399 8.57482 1.0223 8.68262 0.973754 8.80128C0.925207 8.91994 0.900778 9.04708 0.901892 9.17528C0.903006 9.30348 0.929641 9.43017 0.980243 9.54797C1.03084 9.66577 1.1044 9.77231 1.19662 9.86137L4.658 13.3237C4.92697 13.5927 5.24631 13.8061 5.59777 13.9517C5.94922 14.0973 6.32592 14.1723 6.70634 14.1723C7.08676 14.1723 7.46346 14.0973 7.81492 13.9517C8.16638 13.8061 8.48571 13.5927 8.75469 13.3237L12.217 9.86137C12.398 9.68031 12.4997 9.43477 12.4997 9.17875C12.4997 8.92273 12.398 8.67719 12.217 8.49613Z" fill="#BDBDBD"/>
+                                </svg>
+                            </span>
+                            <span class="result-panel__top">
+                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.782691 6.50386C0.963752 6.68487 1.20929 6.78655 1.46531 6.78655C1.72133 6.78655 1.96687 6.68487 2.14793 6.50386L5.32738 3.32538L5.33414 13.3793C5.33414 13.6354 5.43586 13.881 5.61693 14.062C5.798 14.2431 6.04359 14.3448 6.29966 14.3448C6.55573 14.3448 6.80131 14.2431 6.98238 14.062C7.16345 13.881 7.26517 13.6354 7.26517 13.3793L7.25842 3.32441L10.4379 6.50386C10.5269 6.59608 10.6335 6.66963 10.7513 6.72023C10.8691 6.77084 10.9958 6.79747 11.124 6.79859C11.2522 6.7997 11.3793 6.77527 11.498 6.72672C11.6166 6.67818 11.7244 6.60648 11.8151 6.51583C11.9057 6.42517 11.9774 6.31737 12.026 6.19871C12.0745 6.08005 12.0989 5.95292 12.0978 5.82472C12.0967 5.69651 12.0701 5.56982 12.0195 5.45202C11.9689 5.33423 11.8953 5.22769 11.8031 5.13862L8.34173 1.67627C8.07275 1.40725 7.75341 1.19385 7.40196 1.04825C7.0505 0.902659 6.6738 0.827721 6.29338 0.827721C5.91296 0.827721 5.53626 0.902659 5.1848 1.04825C4.83335 1.19385 4.51401 1.40725 4.24504 1.67627L0.782691 5.13862C0.601684 5.31968 0.5 5.56522 0.5 5.82124C0.5 6.07726 0.601684 6.3228 0.782691 6.50386Z" fill="#78D679"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listPublications">
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+                @@include('./component/card.html')
+            </div>
+            <div class="paginations-show mt-24 mb-48">
+                @@include('./component/paginations.html')
+            </div>
+        </div>
+    </main>
+    @@include('./template/footer.html', {})
+</body>
+</html>

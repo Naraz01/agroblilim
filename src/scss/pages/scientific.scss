@@ -1,0 +1,87 @@
+@import './../utils/const.scss';
+
+.scientific {
+    position: relative;
+    &-grid {
+        display: grid;
+        grid-template-columns: 368px 1fr;
+        grid-column-gap: 16px;
+        margin-top: 34px;
+    }
+    &-info {
+        background-color: #fff;
+    }
+    &-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray-color3;
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray-color1;
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__color {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $dark-green;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-download {
+        display: flex;
+        justify-content: center;
+        &__btn {
+            background: $mid-green;
+            border-radius: 8px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color6;
+            cursor: pointer;
+            span {
+                margin-left: 10px;
+            }
+            &:hover {
+                background-color: darken($mid-green, 10%);
+            }
+        }
+    }
+    &-info {
+        padding: 0 16px;
+        &__blog {
+            padding: 16px 0;
+            border-bottom: 1px solid #F0F0F0;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &-content {
+        background-color: #fff;
+        padding: 0 16px;
+        &__block {
+            padding: 16px 0;
+            border-bottom: 1px solid #F0F0F0;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

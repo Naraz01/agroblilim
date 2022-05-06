@@ -1,0 +1,11 @@
+import * as testing from './modules/functions.js';
+testing.Sliders();
+testing.inputSelect();
+testing.Tabs();
+testing.mySelect();
+testing.menuProfile();
+testing.Modal();
+testing.ResetPassword();
+testing.Radio();
+testing.searchOpen();
+testing.collection();

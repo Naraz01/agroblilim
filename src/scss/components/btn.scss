@@ -1,0 +1,19 @@
+@import './../utils/const.scss';
+
+.btn {
+    background-color: $light-green;
+    border-radius: 8px;
+    padding: 16px 40px;
+    color: $gray-color6;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover {
+        background-color: darken($light-green, 10%);
+        transition: all 0.2s linear;
+    }
+    &-flex {
+        display: flex;
+        align-items: center;
+    }
+}

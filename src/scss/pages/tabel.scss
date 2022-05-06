@@ -1,0 +1,156 @@
+@import './../utils/const.scss';
+
+.tabel {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 221px 1fr;
+    grid-column-gap: 16px;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &-img {
+        height: 140px;
+        border-radius: 4px;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    &-name {
+        margin-top: 10px;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $gray-color1;
+        }
+    }
+    &-like {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    &-info {
+        margin: 16px 0;
+    }
+    &-tags {
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color3;
+        }
+        &__items {
+            display: flex;
+            margin-top: 8px;
+        }
+        &__item {
+            background: #F0F0F0;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: $gray-color3;
+            margin-right: 8px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &-panel {
+        &__block {
+            display: flex;
+            justify-content: center;
+            margin-top: 12px;
+        }
+    }
+    &-save {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        p {
+            margin-left: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color1;
+        }
+    }
+    &-visibel {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        p {
+            margin-left: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color1;
+        }
+    }
+    &-info {
+        display: grid;
+        grid-template-columns: 216px 146px 1fr;
+        grid-column-gap: 34px;
+    }
+    &-company {
+        &__title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color3;
+        } 
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $gray-color1;
+            margin-top: 8px;
+        }
+    }
+    &-district {
+        &__title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color3;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $gray-color1;
+            margin-top: 8px;
+        }
+    }
+    &-industry {
+        &__title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color3;
+        }
+        &__tags {
+            display: flex;
+            margin-top: 8px;
+        }
+        &__tag {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $mid-green;
+            background: #F0F0F0;
+            border-radius: 4px;
+            padding: 8px 10px;
+        }
+    }
+}

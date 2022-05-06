@@ -1,0 +1,28 @@
+@import './../utils/const.scss';
+
+[data-tab-content] {
+    display: none;
+}
+  
+.active[data-tab-content] {
+    display: block;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $light-green;
+}
+  
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.tab.active {
+    color: $light-green;
+    border-bottom: 3px solid $light-green;
+}
+

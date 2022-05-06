@@ -1,0 +1,173 @@
+
+.select-wrapper {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    margin-top: 30px;
+}
+.dropholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C2C2C;
+    position: relative;
+    box-sizing: border-box;
+}
+.holder {
+    line-height: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2C2C2C;
+    margin: 0;
+}
+  
+  .dropdown,
+  .dropholder {
+    background: #D8EEFE;
+  }
+  
+  .dropdown {
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+    font: 16px arial;
+    cursor: pointer;
+    height: 60px;
+    position: relative;
+    padding-left: 20px;
+    box-sizing: border-box;
+    z-index: 20;
+    &:after {
+      content: "▾";
+      font-size: 18px;
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      display: block;
+    }
+    &.active + .dropdownOption {
+      display: block;
+    }
+  }
+  
+  .dropdownOption {
+    padding: 10px 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    margin: 0;
+    cursor: pointer;
+    display: none;
+    background: #D8EEFE;
+    border-radius: 0 0 10px 10px;
+    z-index: 5;
+    overflow: hidden;
+    li {
+      list-style: none;
+      a {
+        padding: 10px 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2C2C2C;
+        display: block;
+        &:hover:not(.current) {
+          color: #2C2C2C;
+        }
+      }   
+    }
+  }
+  
+  .current {
+      background-color: #dbe8ef;
+  }  
+
+  .my-select {
+    position: relative;
+    width: 228px;
+    margin-top: 8px;
+  }
+  .my-select .selectBtn {
+    padding: 12px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+  }
+  .my-select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 14px;
+    height: 8px;
+    background-image: url('../../img/sort-icon.svg');
+    background-repeat: no-repeat;
+    transition: 0.2s ease;
+  }
+  .my-select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  .my-select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  .my-select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 3;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+  }
+  .my-select .selectDropdown .my-option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .my-select .selectDropdown .my-option:hover {
+    background: #f8f8f8;
+  }
+  .my-select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }

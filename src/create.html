@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('component/head.html', {
+        "title": "Добавить авторов"
+    })
+<body class="create-bg">
+    @@include('./template/header1.html', {})
+    <main class="create">
+        <div class="breadcrumbs-show">
+            <div class="container">
+                @@include('./component/breadcrumbs.html')
+            </div>
+        </div>
+        <div class="container">
+            <div class="create-items mb-48">
+                <div class="create-item">
+                    <p class="create-title">Добавить авторов</p>
+                    <input type="text" class="create-input" />
+                    <input type="text" class="create-input" placeholder="Введито ФИО"/>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Год</p>
+                    <input type="text" class="create-input" value="debbie.baker@example.com"/>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Организация</p>
+                    <input type="text" class="create-input" value="debbie.baker@example.com"/>
+                </div>
+                <div class="create-wrapper">
+                    <ul class="profile-form__languages">
+                        <li class="profile-form__language profile-form__language-active">РУС</li>
+                        <li class="profile-form__language">КАЗ</li>
+                        <li class="profile-form__language">ENG</li>
+                    </ul>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Наименование работы</p>
+                    <textarea class="create-textarea">debbie.baker@example.com</textarea>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Кто может внедрить результаты?</p>
+                    <textarea class="create-textarea">debbie.baker@example.com</textarea>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Эффект от внедрения</p>
+                    <textarea class="create-textarea">debbie.baker@example.com</textarea>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Затратно ли?</p>
+                    <form>
+                        <div class="create-check">
+                            <div class="create-check__yes">
+                                <input type="radio" id="yes1">
+                               <label for="yes1"><span></span>Да</label>
+                            </div>
+                            <div class="create-check__no">
+                                <input type="radio" id="no1" checked>
+                               <label for="no1"><span></span>Нет</label>
+                            </div>
+                        </div>
+                    </form>
+                    <input type="text" class="create-input" value="debbie.baker@example.com"/>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Расчет окупаемости инвестиции</p>
+                    <form>
+                        <div class="create-check">
+                            <div class="create-check__yes">
+                                <input type="radio" id="yes2">
+                               <label for="yes2"><span></span>Да</label>
+                            </div>
+                            <div class="create-check__no">
+                                <input type="radio" id="no2" checked>
+                               <label for="no2"><span></span>Нет</label>
+                            </div>
+                        </div>
+                    </form>
+                    <input type="text" class="create-input" value="debbie.baker@example.com"/>
+                </div>
+                <div class="create-item">
+                    <p class="create-title">Прикрепить аннотацию</p>
+                    <div class="create-download">
+                        Загрузить файл
+                    </div>
+                </div>
+                <div class="create-wrapper">
+                    <div class="create-save">
+                        Сохранить
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./template/footer.html', {})
+</body>
+</html>

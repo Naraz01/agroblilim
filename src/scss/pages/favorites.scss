@@ -1,0 +1,15 @@
+@import './../utils/const.scss';
+
+.favorites {
+    background-color: #fff;
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: $gray-color2;
+    }
+    .my-select .selectBtn {
+        background: $gray-color6;
+      }
+} 

@@ -1,0 +1,22 @@
+.myWorks {
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #333333;
+    }
+    &-create {
+        background: #3C955A;
+        border-radius: 8px;
+        padding: 10px 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #F2F2F2;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($color: #3C955A, $amount: 5%);
+        }
+    }
+}

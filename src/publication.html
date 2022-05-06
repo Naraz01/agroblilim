@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('component/head.html', {
+        "title": "Онлайн-база научных публикаций в Казахстане"
+    })
+<body>
+    @@include('./template/header.html', {})
+    <main class="index">
+        <div class="insert">
+            <div class="container">
+                <div class="insert-block">
+                    <div class="insert-bg">
+                        <img src="./img/bgInsertPhoto.png" alt="#" />
+                    </div>
+                    <div class="insert-content">
+                        <h1 class="insert-title">
+                            Онлайн-база научных публикаций в Казахстане
+                        </h1>
+                        <p class="insert-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="btn">
+                            Подробнее
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="search mt-48">
+                <p class="search-title">
+                    Найдите подходящего агроконсультанта
+                </p>
+                <div class="search-form">
+                    <div class="search-form__top">
+                        <input class="form-input" type="text" placeholder="Поисковой запрос"/>
+                            <div>
+                                <select id="normal-select-1" placeholder-text="Директор">
+                                    <option value="1" class="select-dropdown__list-item">Директор</option>
+                                    <option value="2" class="select-dropdown__list-item">Техник</option>
+                                    <option value="3" class="select-dropdown__list-item">Электрик</option>
+                                    <option value="4" class="select-dropdown__list-item">Smm</option>
+                                    <option value="4" class="select-dropdown__list-item">Smm</option>
+                                    <option value="4" class="select-dropdown__list-item">Smm</option>
+                                    <option value="4" class="select-dropdown__list-item">Smm</option>
+    
+                                </select>
+                            </div>
+                        <a href="./listPublications.html" class="search-btn">
+                            <span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <p>
+                                Найти
+                            </p>                            
+                        </a>
+                    </div>
+                    <div class="search-form__bottom">
+                        <div>
+                            <select id="normal-select-2" placeholder-text="Регион">
+                                <option value="1" class="select-dropdown__list-item">Регион 1</option>
+                                <option value="2" class="select-dropdown__list-item">Регион 2</option>
+                                <option value="3" class="select-dropdown__list-item">Регион 3</option>
+                                <option value="4" class="select-dropdown__list-item">Регион 4</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="normal-select-3" placeholder-text="Организация">
+                                <option value="1" class="select-dropdown__list-item">Организация 1</option>
+                                <option value="2" class="select-dropdown__list-item">Организация 2</option>
+                                <option value="3" class="select-dropdown__list-item">Организация 3</option>
+                                <option value="4" class="select-dropdown__list-item">Организация 4</option>
+                                <option value="4" class="select-dropdown__list-item">Организация 5</option>
+                            </select>
+                        </div>
+                        <div class="filter-young">
+                            <label>
+                                <input type="checkbox" class="default__check" checked="checked" value="1" />
+                                <span class="custom__check"></span>
+                                <span class="modal-type__text">Молодой ученый</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-extended">
+                    Расширенный поиск
+                </div>
+            </div>
+            <div class="popular mt-48">
+                <div class="popular-arrows">
+
+                </div>
+                <div class="popular-head">
+                    <p class="popular-title">
+                        Популярные работы
+                    </p>
+                </div>
+                <div class="popular-items">
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+                    @@include('./component/card.html')
+
+                </div>
+                
+            </div>
+            <div class="advertising mt-48 mb-48">
+                <div class="advertising-block">
+                    <p class="advertising-text">Реклама</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./template/footer.html', {})
+</body>
+</html>

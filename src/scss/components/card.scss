@@ -1,0 +1,46 @@
+@import './../utils/const.scss';
+
+.card {
+    width: 255px;
+    max-width: 255px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 12px;
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray-color1;
+    }
+    &-data {
+        margin: 8px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray-color3;
+    }
+    &-wkatu {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark-green;
+        margin-bottom: 9px;
+    }
+    &-visibel {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $gray-color3;
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 8px;
+        }
+    }
+}

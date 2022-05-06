@@ -1,0 +1,131 @@
+@import './../utils/const.scss';
+
+.list {
+    position: relative;
+}
+.filter {
+    padding-top: 74px;
+    padding-bottom: 48px;
+    &-bg {
+        background-color: #ffffff;
+    }
+    &-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-green;
+        position: relative;
+        text-align: center;
+        &::after {
+            content: "";
+            border: 4px solid #78D679;
+            width: 313px;
+            display: block;
+            margin: auto;
+            margin-top: 12px;
+        }
+    }
+    &-top {
+        display: grid;
+        grid-template-columns: 533px 1fr 107px;
+        grid-column-gap: 8px;
+        margin-top: 40px;
+    }
+    &-bottom {
+        display: grid;
+        grid-template-columns: 404px 1fr 181px;
+        grid-column-gap: 8px;
+        margin-top: 15px;
+    }
+    &-young {
+        padding: 10px;
+    }
+}
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    &-left {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $gray-color1;
+    }
+    &-right {
+        display: flex;
+        align-items: flex-end;
+    }
+    &-type {
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-color1;
+            margin-bottom: 8px;
+        }
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 4px 8px;
+        }
+        &__item {
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &-active {
+                background-color: $light-green;
+                svg {
+                    rect {
+                        &:first-child {
+                            fill: $light-green;
+                        }
+                        fill: #ffffff;
+                        stroke: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    &-panel {
+        &__block {
+            background-color: #ffffff;
+            height: 40px;
+            width: 42px;
+            border-radius: 4px;
+            position: relative;
+        }
+        margin-left: 19px;
+        margin-right: 19px;
+        &__bottom {
+            position: absolute;
+            bottom: 10%;
+            left: 23%;
+            transform: translate(-23%, -10%);
+        }
+        &__top {
+            position: absolute;
+            top: 30%;
+            right: 15%;
+            transform: translate(-15%,-30%);
+        }
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray-color1;
+    }
+}
+.show {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+}
